@@ -3,15 +3,15 @@
 Google's Material Icons as SVG files. When only using a few icons, much more efficient to use the svg files. react-native-vector-icons did not have the fonts I needed. This also enables me to have a smaller application when I only need a handfull of icons (due to tree shaking).
 
 ```javascript
-import { SvgHome } from 'react-native-material-icons';
+import { SvgHome, SvgHomeOutlined, SvgHomeRound, SvgHomeSharp, SvgHomeTwotone } from 'react-native-material-icons';
 
 const Example = () => (
   <View style={{ flexDirection: 'row', backgroundColor: 'black' }}>
-    <SvgHome variant="default" size={48} color="#ff0000" />
-    <SvgHome variant="outlined" size={48} color="#ffff00" />
-    <SvgHome variant="round" size={48} color="#00ff00" />
-    <SvgHome variant="sharp" size={48} color="#0000ff" />
-    <SvgHome variant="twotone" size={48} color="#ff00ff" />
+    <SvgHome size={48} color="#ff0000" />
+    <SvgHomeOutlined size={48} color="#ffff00" />
+    <SvgHomeRound size={48} color="#00ff00" />
+    <SvgHomeSharp size={48} color="#0000ff" />
+    <SvgHomeTwotone size={48} color="#ff00ff" />
   </View>
 );
 ```
@@ -43,16 +43,6 @@ Names are mapped from google's website. The names map from snake case to PascalC
 - `size`: Default is 24.
 
   Width and height of icon.
-
-- `variant`: Default = "default"
-
-  are specified as a property instead of a different font.
-
-  - `default` (or filled)
-  - `outlined`
-  - `rounded`
-  - `sharp`
-  - `twotone` - Some icons ONLY have this
 
 - `fillOpacity`: Default = 1
 
