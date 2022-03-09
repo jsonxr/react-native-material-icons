@@ -85,18 +85,18 @@ async function main() {
     }
   }
 
+  const ROOT = 'icons';
+
   const generatePromises = function* () {
     for (const icon of icons) {
-      yield writeFile(icon, 'icons');
+      yield writeFile(icon, ROOT);
     }
   };
   const iterator: any = generatePromises();
   const pool = new PromisePool(iterator, 3);
   await pool.start();
 
-  writeIndex(icons, 'icons');
-
-  console.log('complete.');
+  writeIndex(icons, ROOT);
 }
 
 main();
