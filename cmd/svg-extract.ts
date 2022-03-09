@@ -64,7 +64,7 @@ async function main() {
 
       const variantNames = (await readdir(variantDir)).sort();
 
-      const ComponentName: string = isNaN(+name.charAt(0)) ? upperFirst(camelCase(name)) : `I${camelCase(name)}`;
+      const ComponentName: string = `Svg${upperFirst(camelCase(name))}`;
 
       if (name === 'addchart') {
         console.log('skipping due to conflict with editor/add_chart... ', variantDir);
