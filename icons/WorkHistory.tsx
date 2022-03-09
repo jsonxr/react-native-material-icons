@@ -38,6 +38,18 @@ export const WorkHistory = createSvgIcon({
             </g>
         </g>
     </svg>`,
+  sharp: `
+    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
+        <g>
+            <rect fill="none" height="24" width="24"/>
+        </g>
+        <g>
+            <g>
+                <path d="M16.66,11.13c2-0.37,3.88,0.11,5.34,1.13V6h-6V2H8v4H2v15h9.68c-0.63-1.33-0.87-2.88-0.52-4.51 C11.75,13.79,13.94,11.63,16.66,11.13z M10,4h4v2h-4V4z"/>
+                <path d="M18,13c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S20.76,13,18,13z M19.65,20.35l-2.15-2.15V15h1v2.79l1.85,1.85 L19.65,20.35z"/>
+            </g>
+        </g>
+    </svg>`,
   twotone: `
     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
         <g>
@@ -49,18 +61,6 @@ export const WorkHistory = createSvgIcon({
                 <path d="M4,19V8h16v3.29c0.72,0.22,1.4,0.54,2,0.97V8c0-1.11-0.89-2-2-2h-4V4c0-1.11-0.89-2-2-2h-4C8.89,2,8,2.89,8,4v2H4 C2.89,6,2.01,6.89,2.01,8L2,19c0,1.11,0.89,2,2,2h7.68c-0.3-0.62-0.5-1.29-0.6-2H4z M10,4h4v2h-4V4z"/>
             </g>
             <path d="M18,13c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S20.76,13,18,13z M19.65,20.35l-2.15-2.15V15h1v2.79l1.85,1.85 L19.65,20.35z"/>
-        </g>
-    </svg>`,
-  sharp: `
-    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
-        <g>
-            <rect fill="none" height="24" width="24"/>
-        </g>
-        <g>
-            <g>
-                <path d="M16.66,11.13c2-0.37,3.88,0.11,5.34,1.13V6h-6V2H8v4H2v15h9.68c-0.63-1.33-0.87-2.88-0.52-4.51 C11.75,13.79,13.94,11.63,16.66,11.13z M10,4h4v2h-4V4z"/>
-                <path d="M18,13c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S20.76,13,18,13z M19.65,20.35l-2.15-2.15V15h1v2.79l1.85,1.85 L19.65,20.35z"/>
-            </g>
         </g>
     </svg>`
 });

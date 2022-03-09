@@ -1,7 +1,7 @@
 {
   "name": "react-native-material-icons",
-  "version": "1.0.0-beta.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Material Icons in SVG format for use in react-native",
   "main": "lib/commonjs/index.js",
   "scripts": {
     "update": "ts-node cmd/svg-update.ts",

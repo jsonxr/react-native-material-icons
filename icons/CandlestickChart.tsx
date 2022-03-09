@@ -29,22 +29,6 @@ export const CandlestickChart = createSvgIcon({
             </g>
         </g>
     </svg>`,
-  sharp: `
-    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
-        <g>
-            <rect fill="none" height="24" width="24"/>
-        </g>
-        <g>
-            <g>
-                <g>
-                    <polygon points="9,4 7,4 7,6 5,6 5,18 7,18 7,20 9,20 9,18 11,18 11,6 9,6"/>
-                </g>
-                <g>
-                    <polygon points="19,8 17,8 17,4 15,4 15,8 13,8 13,15 15,15 15,20 17,20 17,15 19,15"/>
-                </g>
-            </g>
-        </g>
-    </svg>`,
   round: `
     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
         <g>
@@ -58,6 +42,22 @@ export const CandlestickChart = createSvgIcon({
                 </g>
                 <g>
                     <path d="M18,8h-1V5c0-0.55-0.45-1-1-1h0c-0.55,0-1,0.45-1,1v3h-1c-0.55,0-1,0.45-1,1v5c0,0.55,0.45,1,1,1h1v4c0,0.55,0.45,1,1,1 h0c0.55,0,1-0.45,1-1v-4h1c0.55,0,1-0.45,1-1V9C19,8.45,18.55,8,18,8z"/>
+                </g>
+            </g>
+        </g>
+    </svg>`,
+  sharp: `
+    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
+        <g>
+            <rect fill="none" height="24" width="24"/>
+        </g>
+        <g>
+            <g>
+                <g>
+                    <polygon points="9,4 7,4 7,6 5,6 5,18 7,18 7,20 9,20 9,18 11,18 11,6 9,6"/>
+                </g>
+                <g>
+                    <polygon points="19,8 17,8 17,4 15,4 15,8 13,8 13,15 15,15 15,20 17,20 17,15 19,15"/>
                 </g>
             </g>
         </g>

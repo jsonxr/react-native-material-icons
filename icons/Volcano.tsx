@@ -23,7 +23,7 @@ export const Volcano = createSvgIcon({
             </g>
         </g>
     </svg>`,
-  sharp: `
+  outlined: `
     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
         <g>
             <rect fill="none" height="24" width="24"/>
@@ -31,7 +31,7 @@ export const Volcano = createSvgIcon({
         <g>
             <g>
                 <g>
-                    <polygon points="18,8 11,8 9,13 6,13 2,22 22,22"/>
+                    <path d="M18,8h-7l-2,5H6l-4,9h20L18,8z M7.3,15H9h1.35l0.5-1.26l1.5-3.74h4.14l2.86,10H5.08L7.3,15z"/>
                 </g>
                 <g>
                     <rect height="4" width="2" x="13" y="1"/>
@@ -68,7 +68,7 @@ export const Volcano = createSvgIcon({
             </g>
         </g>
     </svg>`,
-  outlined: `
+  sharp: `
     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
         <g>
             <rect fill="none" height="24" width="24"/>
@@ -76,7 +76,7 @@ export const Volcano = createSvgIcon({
         <g>
             <g>
                 <g>
-                    <path d="M18,8h-7l-2,5H6l-4,9h20L18,8z M7.3,15H9h1.35l0.5-1.26l1.5-3.74h4.14l2.86,10H5.08L7.3,15z"/>
+                    <polygon points="18,8 11,8 9,13 6,13 2,22 22,22"/>
                 </g>
                 <g>
                     <rect height="4" width="2" x="13" y="1"/>

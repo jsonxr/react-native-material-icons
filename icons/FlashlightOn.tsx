@@ -37,6 +37,18 @@ export const FlashlightOn = createSvgIcon({
             </g>
         </g>
     </svg>`,
+  sharp: `
+    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
+        <g>
+            <path d="M0,0h24v24H0V0z" fill="none"/>
+        </g>
+        <g>
+            <g>
+                <rect height="3" width="12" x="6" y="2"/>
+                <path d="M6,7v1l2,3v11h8V11l2-3V7H6z M12,15.5c-0.83,0-1.5-0.67-1.5-1.5s0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5S12.83,15.5,12,15.5z"/>
+            </g>
+        </g>
+    </svg>`,
   twotone: `
     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
         <g>
@@ -48,18 +60,6 @@ export const FlashlightOn = createSvgIcon({
                 <rect height="1" opacity=".3" width="8" x="8" y="4"/>
                 <path d="M6,2v6l2,3v11h8V11l2-3V2H6z M16,7.39l-2,3.01V20h-4v-9.61l-2-3V7h8V7.39z M16,5H8V4h8V5z"/>
                 <circle cx="12" cy="14" r="1.5"/>
-            </g>
-        </g>
-    </svg>`,
-  sharp: `
-    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
-        <g>
-            <path d="M0,0h24v24H0V0z" fill="none"/>
-        </g>
-        <g>
-            <g>
-                <rect height="3" width="12" x="6" y="2"/>
-                <path d="M6,7v1l2,3v11h8V11l2-3V7H6z M12,15.5c-0.83,0-1.5-0.67-1.5-1.5s0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5S12.83,15.5,12,15.5z"/>
             </g>
         </g>
     </svg>`

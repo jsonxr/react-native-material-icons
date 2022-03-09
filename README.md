@@ -32,7 +32,7 @@ Names are mapped from google's website. The names map from snake case to PascalC
 
 - `add_chart` becomes `<AddChart />`
 - `calendar_month` becomes `<CalendarMonth />`
-- `123` becomes `<M123 />`
+- `123` becomes `<I123 />`
 
 ## Properties
 
@@ -52,7 +52,7 @@ Names are mapped from google's website. The names map from snake case to PascalC
   - `outlined`
   - `rounded`
   - `sharp`
-  - `twotone`
+  - `twotone` - Some icons ONLY have this
 
 - `fillOpacity`: Default = 1
 

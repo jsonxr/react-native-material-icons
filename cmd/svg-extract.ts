@@ -8,6 +8,7 @@ import PromisePool from 'es6-promise-pool';
 type TMIcon = {
   name: string;
   category: string;
+  path: string;
   variants: { [x: string]: string };
 };
 
@@ -24,7 +25,9 @@ const writeIndex = async (icons: TMIcon[], root: string) => {
 
 const tsx = (name: string, xml: Record<string, string>) => {
   // "property": `<svg...>...</svg>`,
-  const properties = Object.keys(xml)
+  const keys = Object.keys(xml).sort();
+
+  const properties = keys
     .map((k) => {
       const pretty = '\n    ' + format(xml[k], { indentation: '    ' }).split('\n').join('\n    ');
       return `  ${k}: \`${pretty}\``;
@@ -59,9 +62,9 @@ async function main() {
         continue;
       }
 
-      const variantNames = await readdir(variantDir);
+      const variantNames = (await readdir(variantDir)).sort();
 
-      const ComponentName: string = isNaN(+name.charAt(0)) ? upperFirst(camelCase(name)) : `M${camelCase(name)}`;
+      const ComponentName: string = isNaN(+name.charAt(0)) ? upperFirst(camelCase(name)) : `I${camelCase(name)}`;
 
       if (name === 'addchart') {
         console.log('skipping due to conflict with editor/add_chart... ', variantDir);
@@ -70,6 +73,7 @@ async function main() {
 
       const icon: TMIcon = {
         name: ComponentName,
+        path: path.join(category, name),
         category,
         variants: {},
       };
@@ -100,24 +104,3 @@ async function main() {
 }
 
 main();
-
-// var delayValue = function (value: number, time: number) {
-//   return new Promise(function (resolve, reject) {
-//     console.log('Resolving ' + value + ' in ' + time + ' ms');
-//     setTimeout(function () {
-//       console.log('Resolving: ' + value);
-//       resolve(value);
-//     }, time);
-//   });
-// };
-
-// const generatePromises = function* () {
-//   for (let count = 1; count <= 5; count++) {
-//     yield delayValue(count, 1000);
-//   }
-// };
-
-// const promiseIterator = generatePromises();
-// const pool = new PromisePool(promiseIterator as any, 3);
-
-// pool.start().then(() => console.log('Complete'));

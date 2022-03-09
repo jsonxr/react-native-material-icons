@@ -7,6 +7,19 @@ export const Expand = createSvgIcon({
         <path d="M0 0h24v24H0V0z" fill="none"/>
         <path d="M4 20h16v2H4zM4 2h16v2H4zm9 7h3l-4-4-4 4h3v6H8l4 4 4-4h-3z"/>
     </svg>`,
+  outlined: `
+    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
+        <g>
+            <path d="M0,0h24v24H0V0z" fill="none"/>
+        </g>
+        <g>
+            <g>
+                <rect height="2" width="16" x="4" y="20"/>
+                <rect height="2" width="16" x="4" y="2"/>
+                <polygon points="9.41,13.59 8,15 12,19 16,15 14.59,13.59 13,15.17 13,8.83 14.59,10.41 16,9 12,5 8,9 9.41,10.41 11,8.83 11,15.17"/>
+            </g>
+        </g>
+    </svg>`,
   round: `
     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
         <g>
@@ -23,19 +36,6 @@ export const Expand = createSvgIcon({
         </g>
         <g>
             <path d="M4,20h16v2H4V20z M4,2h16v2H4V2z M13,9h3l-4-4L8,9h3v6H8l4,4l4-4h-3V9z"/>
-        </g>
-    </svg>`,
-  outlined: `
-    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
-        <g>
-            <path d="M0,0h24v24H0V0z" fill="none"/>
-        </g>
-        <g>
-            <g>
-                <rect height="2" width="16" x="4" y="20"/>
-                <rect height="2" width="16" x="4" y="2"/>
-                <polygon points="9.41,13.59 8,15 12,19 16,15 14.59,13.59 13,15.17 13,8.83 14.59,10.41 16,9 12,5 8,9 9.41,10.41 11,8.83 11,15.17"/>
-            </g>
         </g>
     </svg>`,
   twotone: `
