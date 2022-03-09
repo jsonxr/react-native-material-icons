@@ -31,7 +31,7 @@ const tsx = (name: string, xml: Record<string, string>) => {
     })
     .join(',\n');
 
-  return `import { createSvgIcon } from '../src/createSvgIcon';
+  return `import { createSvgIcon } from './createSvgIcon';
 
 export const ${name} = createSvgIcon({
 ${properties}
