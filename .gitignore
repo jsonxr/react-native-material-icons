@@ -1,0 +1,5 @@
+dist
+.material-design-icons
+node_modules
+.DS_Store
+yarn.lock
