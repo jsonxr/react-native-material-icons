@@ -2,10 +2,11 @@
   "name": "react-native-material-design-svg",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/commonjs/index.js",
   "scripts": {
     "update": "ts-node cmd/svg-update.ts",
-    "extract": "ts-node cmd/svg-extract.ts"
+    "extract": "ts-node cmd/svg-extract.ts",
+    "prepare": "bob build"
   },
   "author": "Jason Rowland",
   "license": "MIT",
@@ -23,9 +24,33 @@
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-native": "^0.67.3",
+    "react-native-builder-bob": "^0.18.2",
     "react-native-svg": "^12.3.0",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2",
     "xml-formatter": "^2.6.1"
-  }
+  },
+  "react-native": "icons/index.ts",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/icons/index.d.ts",
+  "files": [
+    "icons",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "react-native-builder-bob": {
+    "source": "icons",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
 }
