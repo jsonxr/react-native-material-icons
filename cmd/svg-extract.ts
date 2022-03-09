@@ -94,7 +94,7 @@ async function main() {
   const pool = new PromisePool(iterator, 3);
   await pool.start();
 
-  //writeIndex(icons, 'icons');
+  writeIndex(icons, 'icons');
 
   console.log('complete.');
 }
