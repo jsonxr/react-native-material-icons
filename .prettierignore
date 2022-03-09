@@ -1,2 +1,4 @@
+.repo
+lib
 icons
-!icons/createSvgIcon.tsx
+

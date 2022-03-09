@@ -1,6 +1,6 @@
 {
   "name": "react-native-material-icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Material Icons in SVG format for use in react-native",
   "main": "lib/commonjs/index.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "extract": "ts-node cmd/svg-extract.ts",
     "prepare": "bob build"
   },
+  
   "author": "Jason Rowland",
   "license": "MIT",
   "peerDependencies": {

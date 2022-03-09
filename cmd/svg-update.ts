@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs/promises';
 import { spawn, SpawnOptionsWithoutStdio } from 'child_process';
+import { REPO_DIR, REPO_URL } from './constants';
 
 const execute = async (command: string, options?: SpawnOptionsWithoutStdio) =>
   new Promise((resolve, reject) => {
@@ -25,15 +26,15 @@ const execute = async (command: string, options?: SpawnOptionsWithoutStdio) =>
   });
 
 async function main() {
-  const directory = path.resolve('.material-design-icons');
+  const directory = path.resolve(REPO_DIR);
   try {
     const stat = await fs.stat(directory);
-    console.log(`.material-design-icons$ git pull...`);
+    console.log(`${REPO_DIR}$ git pull...`);
     await execute('git pull', { cwd: directory });
   } catch {
     // git clone...
-    console.log(`git clone https://github.com/google/material-design-icons.git --depth 1 ${directory}...`);
-    await execute(`git clone https://github.com/google/material-design-icons.git --depth 1 ${directory}`);
+    console.log(`git clone ${REPO_URL} --depth 1 ${REPO_DIR}...`);
+    await execute(`git clone ${REPO_URL} --depth 1 ${directory}`);
   }
 }
 
